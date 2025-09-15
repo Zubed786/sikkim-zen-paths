@@ -2,41 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Buddhist Heritage Design System - Inspired by Sikkim's monastery colors */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Buddhist Color Palette */
+    --background: 45 100% 98%;
+    --foreground: 15 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 45 50% 96%;
+    --card-foreground: 15 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 45 50% 96%;
+    --popover-foreground: 15 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 35 95% 55%; /* Saffron */
+    --primary-foreground: 45 100% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 20 100% 85%; /* Light Amber */
+    --secondary-foreground: 15 15% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 40 30% 92%;
+    --muted-foreground: 25 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 0 65% 50%; /* Deep Red/Maroon */
+    --accent-foreground: 45 100% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 45 100% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 40 25% 88%;
+    --input: 40 25% 88%;
+    --ring: 35 95% 55%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom Buddhist Theme Colors */
+    --saffron: 35 95% 55%;
+    --saffron-light: 40 85% 75%;
+    --saffron-dark: 30 85% 45%;
+    --amber: 45 90% 65%;
+    --amber-light: 50 80% 80%;
+    --gold: 50 90% 60%;
+    --maroon: 0 65% 35%;
+    --cream: 45 60% 92%;
+    --warm-white: 45 40% 97%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--saffron)), hsl(var(--amber)));
+    --gradient-warm: linear-gradient(180deg, hsl(var(--warm-white)), hsl(var(--cream)));
+    --gradient-sunset: linear-gradient(45deg, hsl(var(--amber)), hsl(var(--gold)), hsl(var(--saffron-light)));
+    --gradient-monastery: linear-gradient(135deg, hsl(var(--maroon)), hsl(var(--saffron-dark)));
+
+    /* Shadows */
+    --shadow-warm: 0 10px 30px -10px hsl(var(--saffron) / 0.2);
+    --shadow-elegant: 0 20px 40px -20px hsl(var(--maroon) / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(var(--amber) / 0.15);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-gentle: all 0.3s ease-out;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,41 +81,45 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Dark mode with deeper monastery colors */
+    --background: 15 25% 8%;
+    --foreground: 45 40% 92%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 15 25% 10%;
+    --card-foreground: 45 40% 92%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 15 25% 10%;
+    --popover-foreground: 45 40% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 35 95% 65%;
+    --primary-foreground: 15 25% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 20 40% 25%;
+    --secondary-foreground: 45 40% 92%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 15 20% 15%;
+    --muted-foreground: 40 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 65% 55%;
+    --accent-foreground: 45 40% 92%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 45 40% 92%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 15 20% 20%;
+    --input: 15 20% 20%;
+    --ring: 35 95% 65%;
+
+    /* Updated dark theme custom colors */
+    --saffron: 35 95% 65%;
+    --saffron-light: 40 85% 80%;
+    --saffron-dark: 30 75% 50%;
+    --amber: 45 90% 70%;
+    --amber-light: 50 80% 85%;
+    --gold: 50 90% 65%;
+    --maroon: 0 65% 45%;
+    --cream: 45 40% 20%;
+    --warm-white: 45 20% 12%;
   }
 }
 
@@ -101,5 +130,69 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background: var(--gradient-warm);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Buddhist Design Utilities */
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .bg-gradient-warm {
+    background: var(--gradient-warm);
+  }
+  
+  .bg-gradient-sunset {
+    background: var(--gradient-sunset);
+  }
+  
+  .bg-gradient-monastery {
+    background: var(--gradient-monastery);
+  }
+  
+  .shadow-warm {
+    box-shadow: var(--shadow-warm);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-gentle {
+    transition: var(--transition-gentle);
+  }
+  
+  /* Monastery Card Styles */
+  .monastery-card {
+    @apply bg-card border border-border rounded-xl p-6 shadow-soft transition-smooth hover:shadow-warm hover:-translate-y-1;
+  }
+  
+  /* Buddhist Button Variants */
+  .btn-saffron {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 transition-gentle rounded-lg px-6 py-3 font-medium shadow-soft;
+  }
+  
+  .btn-monastery {
+    background: var(--gradient-monastery);
+    @apply text-white hover:opacity-90 transition-gentle rounded-lg px-6 py-3 font-medium shadow-elegant;
+  }
+  
+  /* Text Gradients */
+  .text-gradient-saffron {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
