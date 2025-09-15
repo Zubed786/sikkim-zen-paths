@@ -3,14 +3,6 @@
 @tailwind utilities;
 
 /* Buddhist Heritage Design System - Inspired by Sikkim's monastery colors */
-@layer utilities {
-  .wave-text {
-    background: linear-gradient(to right, #f00, #00f);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
-
 
 @layer base {
   :root {
@@ -120,11 +112,6 @@
     @apply bg-background text-foreground;
     background: var(--gradient-warm);
     min-height: 100vh;
-  }
-}
-@layer base {
-  h1, h2, h3, h4, h5, h6, p, a, span, li {
-    @apply wave-text;
   }
 }
 
