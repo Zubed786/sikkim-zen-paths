@@ -114,6 +114,11 @@
     min-height: 100vh;
   }
 }
+@layer base {
+  h1, h2, h3, h4, h5, h6, p, a, span, li {
+    @apply wave-text;
+  }
+}
 
 @layer components {
   /* Buddhist Design Utilities */
