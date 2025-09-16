@@ -211,6 +211,7 @@
   }
 
   /* Text Ripple Effect */
+  /* Text Ripple Effect (fixed) */
   .text-ripple {
     position: relative;
     overflow: hidden;
@@ -220,18 +221,26 @@
   .text-ripple::after {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
     border-radius: 50%;
-    background: hsl(var(--primary) / 0.4);
-    transform: translate(-50%, -50%);
-    transition: width 0.6s, height 0.6s;
+    background: hsl(var(--primary) / 0.25);
+    transform: scale(0);
+    opacity: 0.6;
+    pointer-events: none;
+    transition: transform 0.5s ease, opacity 1s ease;
   }
 
-  .text-ripple:hover::after {
-    width: 300px;
-    height: 300px;
+  .text-ripple:active::after {
+    width: 200px;
+    height: 200px;
+    top: var(--y);
+    left: var(--x);
+    transform: scale(1);
+    opacity: 0;
+    transition: 0s;
   }
+    /* Text Fix Utility */
+  .text-fix {
+    @apply text-foreground;
+  }
+
 }
