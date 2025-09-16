@@ -6,7 +6,6 @@ import heroImage from '@/assets/hero-monastery-panorama.jpg';
 import rumtekImage from '@/assets/rumtek-monastery.jpg';
 import pemayangsteImage from '@/assets/pemayangtse-monastery.jpg';
 import tashidingImage from '@/assets/tashiding-monastery.jpg';
-import SikkimMap from '@/components/SikkimMap';
 
 const Home = () => {
   const inspirationalQuotes = [
@@ -71,10 +70,10 @@ const Home = () => {
         </div>
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 wave-text">
-            Digital <span className="text-gradient-saffron wave-float">Monasteries</span>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            Digital <span className="text-gradient-saffron">Monasteries</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-white/90 text-ripple">
+          <p className="text-xl md:text-2xl mb-8 text-white/90">
             Preserving and Promoting Sikkim's Sacred Monastery Heritage Through Digital Innovation
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -91,7 +90,7 @@ const Home = () => {
       {/* Inspirational Quotes Grid */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gradient-saffron wave-text">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gradient-saffron">
             Wisdom from Sacred Spaces
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -105,10 +104,10 @@ const Home = () => {
                   />
                 </div>
                 <CardContent className="p-6">
-                  <blockquote className="text-lg italic text-center mb-4 text-ripple">
+                  <blockquote className="text-lg italic text-center mb-4">
                     "{item.quote}"
                   </blockquote>
-                  <p className="text-center text-muted-foreground wave-text">— {item.attribution}</p>
+                  <p className="text-center text-muted-foreground">— {item.attribution}</p>
                 </CardContent>
               </Card>
             ))}
@@ -116,26 +115,13 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Interactive Sikkim Map */}
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gradient-saffron wave-text">
-            Sacred Geography of Sikkim
-          </h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto wave-float">
-            Explore the spiritual landscape where ancient monasteries preserve centuries of wisdom
-          </p>
-          <SikkimMap />
-        </div>
-      </section>
-
       {/* What This Website Provides */}
       <section className="py-20 px-4 bg-gradient-sunset">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white wave-text">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
             What Digital Monasteries Provides
           </h2>
-          <p className="text-center text-white/80 mb-12 max-w-2xl mx-auto wave-float">
+          <p className="text-center text-white/80 mb-12 max-w-2xl mx-auto">
             Your comprehensive gateway to understanding and experiencing Sikkim's monastery heritage
           </p>
           
@@ -146,8 +132,8 @@ const Home = () => {
                   <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mx-auto mb-4">
                     <feature.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2 wave-text">{feature.title}</h3>
-                  <p className="text-muted-foreground text-ripple">{feature.description}</p>
+                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                  <p className="text-muted-foreground">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -158,7 +144,7 @@ const Home = () => {
       {/* Quick Links */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gradient-saffron wave-text">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gradient-saffron">
             Explore Our Platform
           </h2>
           
@@ -172,8 +158,8 @@ const Home = () => {
                         <link.icon className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-semibold mb-2 wave-text">{link.title}</h3>
-                        <p className="text-muted-foreground text-ripple">{link.description}</p>
+                        <h3 className="text-xl font-semibold mb-2">{link.title}</h3>
+                        <p className="text-muted-foreground">{link.description}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -187,10 +173,10 @@ const Home = () => {
       {/* Call to Action */}
       <section className="py-20 px-4 bg-gradient-monastery text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 wave-text">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Join Us in Preserving Sacred Heritage
           </h2>
-          <p className="text-xl mb-8 text-white/90 text-ripple">
+          <p className="text-xl mb-8 text-white/90">
             Help us maintain and share the spiritual wealth of Sikkim's monasteries with the world
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
