@@ -15,6 +15,8 @@ const Header = () => {
     { name: 'Donations', path: '/donations' },
     { name: 'Marketplace', path: '/marketplace' },
     { name: 'About', path: '/about' },
+    // ✅ NEW ITEM
+    { name: 'Music & Meditation', path: '/music/meditation' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
