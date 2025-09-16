@@ -129,9 +129,9 @@
     @apply rounded-xl shadow-soft transition-smooth hover:shadow-warm hover:-translate-y-1;
   }
 
-  /* Transparent card with black text & border */
+  /* Transparent card with black border */
   .bg-transparent-black-box {
-    @apply bg-transparent border border-black text-black rounded-xl p-6 shadow-soft relative overflow-hidden text-ripple;
+    @apply bg-black/10 backdrop-blur-sm border border-foreground/20 text-foreground rounded-xl p-6 shadow-soft transition-smooth hover:bg-black/20;
   }
 
   /* Buttons */
@@ -204,9 +204,5 @@
 
   /* Utility for forcing readable text */
   .text-fix { @apply text-foreground; }
-  /* Transparent card with black border */
-.bg-transparent-black-box {
-  @apply bg-transparent border border-black rounded-xl p-6 shadow-soft transition-smooth;
-}
 
 }
