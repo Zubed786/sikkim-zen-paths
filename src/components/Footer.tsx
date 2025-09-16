@@ -6,7 +6,7 @@ const Footer = () => {
           {/* About Section */}
           <div>
             <h3 className="text-xl font-bold mb-4">Digital Monasteries</h3>
-            <p className="text-white/80 leading-relaxed">
+            <p className="text-black/80 leading-relaxed">
               Preserving and promoting the rich monastery heritage of Sikkim through digital innovation 
               and cultural preservation.
             </p>
