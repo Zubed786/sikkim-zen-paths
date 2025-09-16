@@ -15,9 +15,6 @@ import About from "./pages/About";
 import MusicMeditation from "./pages/MusicMeditation";
 import NotFound from "./pages/NotFound";
 
-// ✅ NEW IMPORT
-import Meditation from "./pages/Meditation";
-
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -35,11 +32,8 @@ const App = () => (
             <Route path="/community" element={<Community />} />
             <Route path="/donations" element={<Donations />} />
             <Route path="/marketplace" element={<Marketplace />} />
-            <Route path="/music" element={<Music />} />
+            <Route path="/music" element={<MusicMeditation />} />
             <Route path="/about" element={<About />} />
-
-            {/* ✅ NEW ROUTE */}
-            <Route path="/music/meditation" element={<Meditation />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
