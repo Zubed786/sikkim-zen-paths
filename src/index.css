@@ -204,4 +204,9 @@
 
   /* Utility for forcing readable text */
   .text-fix { @apply text-foreground; }
+  /* Transparent card with black border */
+.bg-transparent-black-box {
+  @apply bg-transparent border border-black rounded-xl p-6 shadow-soft transition-smooth;
+}
+
 }
