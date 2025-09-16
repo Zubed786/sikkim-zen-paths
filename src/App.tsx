@@ -12,6 +12,7 @@ import Community from "./pages/Community";
 import Donations from "./pages/Donations";
 import Marketplace from "./pages/Marketplace";
 import About from "./pages/About";
+import MusicMeditation from "./pages/MusicMeditation";
 import NotFound from "./pages/NotFound";
 
 // ✅ NEW IMPORT
