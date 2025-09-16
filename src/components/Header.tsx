@@ -14,7 +14,6 @@ const Header = () => {
     { name: 'Community', path: '/community' },
     { name: 'Donations', path: '/donations' },
     { name: 'Marketplace', path: '/marketplace' },
-    { name: 'Music & Meditation', path: '/music' },
     { name: 'About', path: '/about' },
     // ✅ NEW ITEM
     { name: 'Music & Meditation', path: '/music/meditation' },
