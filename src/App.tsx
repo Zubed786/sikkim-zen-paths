@@ -14,6 +14,9 @@ import Marketplace from "./pages/Marketplace";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
+// ✅ NEW IMPORT
+import Meditation from "./pages/Meditation";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -32,6 +35,10 @@ const App = () => (
             <Route path="/donations" element={<Donations />} />
             <Route path="/marketplace" element={<Marketplace />} />
             <Route path="/about" element={<About />} />
+
+            {/* ✅ NEW ROUTE */}
+            <Route path="/music/meditation" element={<Meditation />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
