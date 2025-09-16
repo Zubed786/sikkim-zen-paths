@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import DigitalLama from './DigitalLama';
+import Helpline from './Helpline';
 
 interface LayoutProps {
   children: ReactNode;
@@ -16,6 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
       </main>
       <Footer />
       <DigitalLama />
+      <Helpline />
     </div>
   );
 };
