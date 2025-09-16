@@ -12,7 +12,6 @@ import Community from "./pages/Community";
 import Donations from "./pages/Donations";
 import Marketplace from "./pages/Marketplace";
 import About from "./pages/About";
-import MusicMeditation from "./pages/MusicMeditation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,9 +31,7 @@ const App = () => (
             <Route path="/community" element={<Community />} />
             <Route path="/donations" element={<Donations />} />
             <Route path="/marketplace" element={<Marketplace />} />
-            <Route path="/music" element={<MusicMeditation />} />
             <Route path="/about" element={<About />} />
-
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

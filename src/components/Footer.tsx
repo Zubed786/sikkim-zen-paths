@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-gradient-monastery text-black mt-20">
+    <footer className="bg-gradient-monastery text-white mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Section */}
@@ -16,10 +16,10 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Explore</h3>
             <ul className="space-y-2">
-              <li><a href="/heritage" className="text-white/80 hover:text-black transition-gentle">Monastery Heritage</a></li>
-              <li><a href="/virtual" className="text-white/80 hover:text-black transition-gentle">Virtual Tours</a></li>
-              <li><a href="/donations" className="text-white/80 hover:text-black transition-gentle">Support Monasteries</a></li>
-              <li><a href="/marketplace" className="text-white/80 hover:text-black transition-gentle">Sacred Artifacts</a></li>
+              <li><a href="/heritage" className="text-white/80 hover:text-white transition-gentle">Monastery Heritage</a></li>
+              <li><a href="/virtual" className="text-white/80 hover:text-white transition-gentle">Virtual Tours</a></li>
+              <li><a href="/donations" className="text-white/80 hover:text-white transition-gentle">Support Monasteries</a></li>
+              <li><a href="/marketplace" className="text-white/80 hover:text-white transition-gentle">Sacred Artifacts</a></li>
             </ul>
           </div>
 
