@@ -12,6 +12,9 @@ import Community from "./pages/Community";
 import Donations from "./pages/Donations";
 import Marketplace from "./pages/Marketplace";
 import About from "./pages/About";
+import Music from "./pages/Music";
+import Manuscripts from "./pages/Manuscripts";
+import MonasteryMap from "./pages/MonasteryMap";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +34,9 @@ const App = () => (
             <Route path="/community" element={<Community />} />
             <Route path="/donations" element={<Donations />} />
             <Route path="/marketplace" element={<Marketplace />} />
+            <Route path="/music" element={<Music />} />
+            <Route path="/manuscripts" element={<Manuscripts />} />
+            <Route path="/map" element={<MonasteryMap />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

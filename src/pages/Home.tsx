@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { MapPin, Heart, Camera, Users, ShoppingBag, Info } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import HelplineBox from '@/components/HelplineBox';
 import heroImage from '@/assets/hero-monastery-panorama.jpg';
 import rumtekImage from '@/assets/rumtek-monastery.jpg';
 import pemayangsteImage from '@/assets/pemayangtse-monastery.jpg';
@@ -167,6 +168,13 @@ const Home = () => {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Helpline Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <HelplineBox />
         </div>
       </section>
 

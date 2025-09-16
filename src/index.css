@@ -6,15 +6,15 @@
 
 @layer base {
   :root {
-    /* Buddhist Color Palette */
-    --background: 45 100% 98%;
-    --foreground: 15 15% 15%;
+    /* Buddhist Color Palette - Darker theme */
+    --background: 25 15% 12%;
+    --foreground: 45 80% 92%;
 
-    --card: 45 50% 96%;
-    --card-foreground: 15 15% 15%;
+    --card: 25 20% 15%;
+    --card-foreground: 45 80% 92%;
 
-    --popover: 45 50% 96%;
-    --popover-foreground: 15 15% 15%;
+    --popover: 25 20% 15%;
+    --popover-foreground: 45 80% 92%;
 
     --primary: 35 95% 55%; /* Saffron */
     --primary-foreground: 45 100% 98%;
@@ -22,17 +22,17 @@
     --secondary: 20 100% 85%; /* Light Amber */
     --secondary-foreground: 15 15% 15%;
 
-    --muted: 40 30% 92%;
-    --muted-foreground: 25 10% 45%;
+    --muted: 25 15% 20%;
+    --muted-foreground: 40 30% 65%;
 
-    --accent: 0 65% 50%; /* Deep Red/Maroon */
-    --accent-foreground: 45 100% 98%;
+    --accent: 0 65% 60%; /* Deep Red/Maroon */
+    --accent-foreground: 45 90% 95%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 45 100% 98%;
+    --destructive-foreground: 45 90% 95%;
 
-    --border: 40 25% 88%;
-    --input: 40 25% 88%;
+    --border: 25 20% 25%;
+    --input: 25 20% 18%;
     --ring: 35 95% 55%;
 
     --radius: 0.75rem;
@@ -45,8 +45,8 @@
     --amber-light: 50 80% 80%;
     --gold: 50 90% 60%;
     --maroon: 0 65% 35%;
-    --cream: 45 60% 92%;
-    --warm-white: 45 40% 97%;
+    --cream: 25 25% 22%;
+    --warm-white: 25 20% 14%;
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--saffron)), hsl(var(--amber)));
